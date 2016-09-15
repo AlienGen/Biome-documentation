@@ -18,13 +18,13 @@ It is used to build referential, ticketing, logistic or any others data-relation
 The goal of this framework
 --------------------------
 
-The main goal of this framework is to be able to develop web application faster.
+The main goal of this framework is to be able to develop web applications faster.
 
-Companies need to move fast, and for most of the time, a web application can increase the speed of communication inside
+Companies need to move fast, and most of the time, a web application can increase the speed of communication inside
 a company. But having the perfect application that will fit the needs is not an easy task. That's why, Biome was developed
 to test the requirements faster and move faster to the solution that will fit the needs.
 
-This framework is inspired by JSF (Java server faces) and an awesome framework developed internally by a french company
+This framework is inspired by JSF (Java server faces) an awesome framework developed internally by a french company
 called Free SAS.
 
 Quick-start guide
@@ -52,9 +52,10 @@ javascript to obtain minified files. Make sure you have at least **npm** install
 Setup your webserver
 --------------------
 
-The webserver should be configured to reach de ``public/`` folder of your project. This public folder contains the ``index.php`` which
+The webserver should be configured to reach the ``public/`` folder of your project. This public folder contains the ``index.php`` which
 is the starting point of the application, and an ``.htaccess`` file which will set the URL rewriting (in case you are using Apache
 as web server).
+Or you can use the php command line tool to direct it to the public path . For example run ``php -S localhost:8080 public/`` in the project root to start the webserver on localhost and port 8080.
 
 If you are using nginx or any other webserver, you should look at the documentation of this webserver and setup your webserver
 to obtain the same behavior.
@@ -65,7 +66,7 @@ Make sure the ``storage/`` folder can be written by the webserver's user.
 Setup your database configuration
 ---------------------------------
 
-The sample application contains a ``.env.example`` file. Rename this file to ``.env`` and define the environment variables
+The sample application contains an ``.env.example`` file. Rename this file to ``.env`` and define the environment variables
 inside to your configuration.
 
 .. code-block:: console
@@ -178,7 +179,7 @@ Now, it's time to go further and create your own pages.
 Create your first page
 ----------------------
 
-In this example, we will add an FAQ page to the sample application.
+In this example, we will add a FAQ page to the sample application.
 
 For this purpose we will create the new endpoints ``GET /faq`` by creating a new controller and a default action. Then we will
 create the view that will show the contents of the FAQ page.
@@ -333,6 +334,8 @@ Create a collection
 
 In this example, we will create a collection. Another solution can be to pass the content to the view directly from the
 action method of the controller. I choose to create a collection to demonstrate the process.
+
+All the application collections are stored in the ``app/collections`` folder. You can create the file ``RequestCollection.php`` as follow:
 
 .. code-block:: php
 
