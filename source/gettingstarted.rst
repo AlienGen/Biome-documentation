@@ -55,7 +55,6 @@ Setup your webserver
 The webserver should be configured to reach the ``public/`` folder of your project. This public folder contains the ``index.php`` which
 is the starting point of the application, and an ``.htaccess`` file which will set the URL rewriting (in case you are using Apache
 as web server).
-Or you can use the php command line tool to direct it to the public path . For example run ``php -S localhost:8080 public/`` in the project root to start the webserver on localhost and port 8080.
 
 If you are using nginx or any other webserver, you should look at the documentation of this webserver and setup your webserver
 to obtain the same behavior.
