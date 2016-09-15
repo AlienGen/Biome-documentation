@@ -24,7 +24,7 @@ Companies need to move fast, and most of the time, a web application can increas
 a company. But having the perfect application that will fit the needs is not an easy task. That's why, Biome was developed
 to test the requirements faster and move faster to the solution that will fit the needs.
 
-This framework is inspired by JSF (Java server faces) an awesome framework developed internally by a french company
+This framework is inspired by JSF (Java Server Faces) and an awesome framework developed internally by a french company
 called Free SAS.
 
 Quick-start guide
